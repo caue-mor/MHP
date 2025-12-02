@@ -202,7 +202,7 @@ function initSavingsCalculator() {
 
     function updateCalculator() {
         const valor = parseInt(slider.value);
-        const economia = valor * 0.95; // 95% de economia
+        const economia = valor * 0.90; // 90% de economia
         const novaContaValor = valor - economia;
 
         contaAtual.textContent = valor.toLocaleString('pt-BR');

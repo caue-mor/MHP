@@ -917,33 +917,41 @@ select {
 
 /* About Video (Instagram Embed) */
 .about-video {
-    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .video-wrapper {
     position: relative;
     border-radius: var(--radius-lg);
     overflow: hidden;
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-xl);
     background: var(--white);
+    width: 100%;
+    max-width: 450px;
 }
 
 .video-wrapper iframe {
     display: block;
-    max-width: 100%;
+    width: 100%;
+    min-height: 600px;
     border-radius: var(--radius-lg);
 }
 
 .video-caption {
     text-align: center;
     margin-top: 15px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--gray-600);
+    font-weight: 500;
 }
 
 .video-caption i {
     color: #E4405F;
     margin-right: 8px;
+    font-size: 1.1rem;
 }
 
 .about-text h3 {
@@ -2374,12 +2382,12 @@ select {
     }
 
     /* About Video responsivo */
-    .about-video {
-        margin-top: 25px;
+    .video-wrapper {
+        max-width: 100%;
     }
 
     .video-wrapper iframe {
-        height: 400px;
+        min-height: 500px;
     }
 }
 

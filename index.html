@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MHP Engenharia e Energia Solar - Soluções completas em energia solar fotovoltaica para residências e empresas em Manaus e região.">
+    <meta name="keywords" content="energia solar, painéis solares, fotovoltaico, Manaus, economia energia, sustentabilidade">
+    <title>MHP Engenharia e Energia Solar | Soluções em Energia Fotovoltaica</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="sun">
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon"><i class="fas fa-solar-panel"></i></span>
+                <span class="logo-text">MHP<span class="highlight">Energia</span></span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="#beneficios" class="nav-link">Benefícios</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+
+            <a href="#contato" class="nav-cta">
+                <i class="fas fa-bolt"></i> Orçamento Grátis
+            </a>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="particles" id="particles"></div>
+            <div class="solar-animation">
+                <div class="sun-hero"></div>
+                <div class="solar-rays"></div>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                <span class="hero-badge">
+                    <i class="fas fa-leaf"></i> Energia Limpa e Renovável
+                </span>
+                <h1>Transforme a luz do sol em <span class="gradient-text">economia real</span></h1>
+                <p>Reduza até <strong>95%</strong> da sua conta de energia com soluções fotovoltaicas personalizadas. Somos especialistas em projetos de alta eficiência para residências e empresas.</p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="500">0</span>
+                        <span class="stat-label">Projetos Realizados</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="95">0</span>
+                        <span class="stat-suffix">%</span>
+                        <span class="stat-label">Economia Garantida</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="25">0</span>
+                        <span class="stat-label">Anos de Garantia</span>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn btn-primary">
+                        <i class="fas fa-calculator"></i> Simular Economia
+                    </a>
+                    <a href="#servicos" class="btn btn-secondary">
+                        <i class="fas fa-play-circle"></i> Conheça Nossos Serviços
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000">
+                <div class="floating-card card-1">
+                    <i class="fas fa-bolt"></i>
+                    <span>Economia Imediata</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>25 Anos Garantia</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-leaf"></i>
+                    <span>100% Sustentável</span>
+                </div>
+                <div class="house-illustration">
+                    <div class="house">
+                        <div class="roof">
+                            <div class="solar-panels">
+                                <div class="panel"></div>
+                                <div class="panel"></div>
+                                <div class="panel"></div>
+                                <div class="panel"></div>
+                                <div class="panel"></div>
+                                <div class="panel"></div>
+                            </div>
+                        </div>
+                        <div class="house-body">
+                            <div class="window"></div>
+                            <div class="door"></div>
+                            <div class="window"></div>
+                        </div>
+                    </div>
+                    <div class="energy-flow">
+                        <span class="energy-particle"></span>
+                        <span class="energy-particle"></span>
+                        <span class="energy-particle"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Role para descobrir</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Sobre Nós</span>
+                <h2>Pioneiros em <span class="gradient-text">Energia Solar</span> na Amazônia</h2>
+                <p>Desde 2019, transformando o potencial solar da região em economia para nossos clientes</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right" data-aos-duration="800">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <i class="fas fa-solar-panel"></i>
+                            <div class="pulse-ring"></div>
+                        </div>
+                        <div class="experience-badge">
+                            <span class="years">5+</span>
+                            <span class="text">Anos de<br>Experiência</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-text" data-aos="fade-left" data-aos-duration="800">
+                    <h3>Compromisso com Excelência e Inovação</h3>
+                    <p>Em 2019 nasce a <strong>MHP Engenharia e Energia Solar</strong>, empresa que tem como comprometimento a entrega do melhor custo benefício em eficiência energética aos nossos clientes.</p>
+                    <p>A empresa destaca-se pela <strong>inovação aliada à experiência e seriedade</strong>, apresentando rápido crescimento em um cenário bastante competitivo, destacando-se pela excelência nos seus serviços.</p>
+
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Equipamentos Premium</h4>
+                                <p>Trabalhamos com o que há de melhor no mercado mundial</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Equipe Especializada</h4>
+                                <p>Profissionais capacitados e constantemente treinados</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Suporte Completo</h4>
+                                <p>Acompanhamento do projeto do início ao fim</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contato" class="btn btn-primary">
+                        <i class="fas fa-comments"></i> Fale com um Especialista
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Nossos Serviços</span>
+                <h2>Soluções <span class="gradient-text">Completas</span> em Energia Solar</h2>
+                <p>Do projeto à manutenção, cuidamos de cada etapa para garantir sua satisfação</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Assessoria em Financiamento</h3>
+                    <p>Assessoria completa para financiamento de <strong>100% do sistema</strong> de energia solar. Facilitamos o acesso às melhores linhas de crédito do mercado.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Análise de crédito</li>
+                        <li><i class="fas fa-check"></i> Melhores taxas do mercado</li>
+                        <li><i class="fas fa-check"></i> Parcelas que cabem no bolso</li>
+                    </ul>
+                    <a href="#contato" class="service-link">
+                        Saiba mais <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="featured-badge">Mais Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Projeto Personalizado</h3>
+                    <p>Elaboração de projetos <strong>customizados</strong> e gestão completa do processo de homologação junto à concessionária de energia.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Análise do consumo</li>
+                        <li><i class="fas fa-check"></i> Dimensionamento ideal</li>
+                        <li><i class="fas fa-check"></i> Homologação garantida</li>
+                    </ul>
+                    <a href="#contato" class="service-link">
+                        Saiba mais <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Instalação Profissional</h3>
+                    <p>Instalação de painéis, inversores e todos equipamentos por <strong>equipe de profissionais capacitados</strong> e treinados.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Equipe certificada</li>
+                        <li><i class="fas fa-check"></i> Equipamentos premium</li>
+                        <li><i class="fas fa-check"></i> Instalação rápida</li>
+                    </ul>
+                    <a href="#contato" class="service-link">
+                        Saiba mais <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-wrench"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Manutenção Preventiva</h3>
+                    <p>Serviço de manutenção preventiva para garantir a <strong>eficiência e bom desempenho</strong> do seu sistema fotovoltaico.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Limpeza dos painéis</li>
+                        <li><i class="fas fa-check"></i> Inspeção técnica</li>
+                        <li><i class="fas fa-check"></i> Relatórios detalhados</li>
+                    </ul>
+                    <a href="#contato" class="service-link">
+                        Saiba mais <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Monitoramento 24/7</h3>
+                    <p>Monitoramento e avaliação de todos os <strong>dados de performance</strong> do sistema em tempo real via aplicativo.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> App de monitoramento</li>
+                        <li><i class="fas fa-check"></i> Alertas automáticos</li>
+                        <li><i class="fas fa-check"></i> Relatórios de geração</li>
+                    </ul>
+                    <a href="#contato" class="service-link">
+                        Saiba mais <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="benefits">
+        <div class="benefits-bg">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header light" data-aos="fade-up">
+                <span class="section-badge">Por que Energia Solar?</span>
+                <h2>Benefícios que <span class="gradient-text-light">Transformam</span> sua Vida</h2>
+                <p>Descubra todas as vantagens de investir em energia solar</p>
+            </div>
+
+            <div class="benefits-showcase">
+                <div class="benefit-main" data-aos="fade-right">
+                    <div class="benefit-visual">
+                        <div class="savings-calculator">
+                            <div class="calculator-header">
+                                <i class="fas fa-calculator"></i>
+                                <span>Simulador de Economia</span>
+                            </div>
+                            <div class="calculator-body">
+                                <div class="calc-item">
+                                    <span class="calc-label">Conta atual (média)</span>
+                                    <span class="calc-value">R$ <span id="conta-atual">800</span></span>
+                                </div>
+                                <div class="calc-slider">
+                                    <input type="range" id="conta-range" min="200" max="5000" value="800" step="50">
+                                </div>
+                                <div class="calc-result">
+                                    <div class="result-item">
+                                        <span class="result-label">Nova conta</span>
+                                        <span class="result-value success">R$ <span id="nova-conta">40</span></span>
+                                    </div>
+                                    <div class="result-item highlight">
+                                        <span class="result-label">Economia mensal</span>
+                                        <span class="result-value">R$ <span id="economia-mensal">760</span></span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-label">Economia anual</span>
+                                        <span class="result-value">R$ <span id="economia-anual">9.120</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefits-list" data-aos="fade-left">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h4>Economia de até 95%</h4>
+                            <p>Reduza drasticamente sua conta de energia elétrica com retorno do investimento entre 3 a 4 anos.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h4>Valorização do Imóvel</h4>
+                            <p>Imóveis com sistema solar são mais valorizados no mercado imobiliário.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h4>Garantia de 25 Anos</h4>
+                            <p>Painéis com garantia de desempenho de 25 anos funcionando com 80% de eficiência.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h4>Sustentabilidade</h4>
+                            <p>Contribua para um planeta mais limpo gerando sua própria energia renovável.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h4>Proteção contra Aumentos</h4>
+                            <p>Fique protegido contra os constantes aumentos nas tarifas de energia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Counters -->
+            <div class="counters-section" data-aos="fade-up">
+                <div class="counter-item">
+                    <div class="counter-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <div class="counter-value">
+                        <span class="counter" data-target="5000">0</span>
+                        <span class="counter-suffix">+</span>
+                    </div>
+                    <span class="counter-label">Painéis Instalados</span>
+                </div>
+
+                <div class="counter-item">
+                    <div class="counter-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="counter-value">
+                        <span class="counter" data-target="500">0</span>
+                        <span class="counter-suffix">+</span>
+                    </div>
+                    <span class="counter-label">Clientes Satisfeitos</span>
+                </div>
+
+                <div class="counter-item">
+                    <div class="counter-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="counter-value">
+                        <span class="counter" data-target="2500">0</span>
+                        <span class="counter-suffix">MWh</span>
+                    </div>
+                    <span class="counter-label">Energia Gerada</span>
+                </div>
+
+                <div class="counter-item">
+                    <div class="counter-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <div class="counter-value">
+                        <span class="counter" data-target="1200">0</span>
+                        <span class="counter-suffix">ton</span>
+                    </div>
+                    <span class="counter-label">CO² Evitado</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects/Portfolio Section -->
+    <section id="projetos" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Portfólio</span>
+                <h2>Projetos <span class="gradient-text">Realizados</span></h2>
+                <p>Conheça alguns dos nossos trabalhos e a transformação que proporcionamos</p>
+            </div>
+
+            <div class="projects-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="residencial">Residencial</button>
+                <button class="filter-btn" data-filter="comercial">Comercial</button>
+                <button class="filter-btn" data-filter="industrial">Industrial</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="residencial" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-category">Residencial</span>
+                            <h4>Residência Ponta Negra</h4>
+                            <p>Sistema de 8.5 kWp</p>
+                            <div class="project-stats">
+                                <span><i class="fas fa-solar-panel"></i> 20 painéis</span>
+                                <span><i class="fas fa-bolt"></i> 850 kWh/mês</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="comercial" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-category">Comercial</span>
+                            <h4>Supermercado Centro</h4>
+                            <p>Sistema de 75 kWp</p>
+                            <div class="project-stats">
+                                <span><i class="fas fa-solar-panel"></i> 150 painéis</span>
+                                <span><i class="fas fa-bolt"></i> 7.500 kWh/mês</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="industrial" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-category">Industrial</span>
+                            <h4>Indústria Distrito</h4>
+                            <p>Sistema de 200 kWp</p>
+                            <div class="project-stats">
+                                <span><i class="fas fa-solar-panel"></i> 400 painéis</span>
+                                <span><i class="fas fa-bolt"></i> 20.000 kWh/mês</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="residencial" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-category">Residencial</span>
+                            <h4>Condomínio Parque 10</h4>
+                            <p>Sistema de 12 kWp</p>
+                            <div class="project-stats">
+                                <span><i class="fas fa-solar-panel"></i> 28 painéis</span>
+                                <span><i class="fas fa-bolt"></i> 1.200 kWh/mês</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="comercial" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-category">Comercial</span>
+                            <h4>Escritório Adrianópolis</h4>
+                            <p>Sistema de 25 kWp</p>
+                            <div class="project-stats">
+                                <span><i class="fas fa-solar-panel"></i> 50 painéis</span>
+                                <span><i class="fas fa-bolt"></i> 2.500 kWh/mês</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="residencial" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-category">Residencial</span>
+                            <h4>Casa Flores</h4>
+                            <p>Sistema de 6 kWp</p>
+                            <div class="project-stats">
+                                <span><i class="fas fa-solar-panel"></i> 14 painéis</span>
+                                <span><i class="fas fa-bolt"></i> 600 kWh/mês</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Depoimentos</span>
+                <h2>O que nossos <span class="gradient-text">clientes</span> dizem</h2>
+                <p>A satisfação dos nossos clientes é nossa maior conquista</p>
+            </div>
+
+            <div class="testimonials-slider" data-aos="fade-up">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"A MHP transformou minha relação com a conta de luz. Antes pagava R$1.200, hoje pago apenas a taxa mínima. Profissionais excelentes e atenciosos!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h5>Carlos Henrique</h5>
+                                    <span>Empresário - Manaus</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Instalação rápida e sem dor de cabeça. A equipe cuidou de tudo, desde o financiamento até a homologação. Super recomendo a MHP Energia!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h5>Marina Costa</h5>
+                                    <span>Advogada - Manaus</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Investimento que valeu cada centavo. Em menos de 4 anos já terei o retorno total. Além disso, estou contribuindo com o meio ambiente."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h5>Roberto Almeida</h5>
+                                    <span>Médico - Manaus</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="slider-btn prev" id="prev-testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-dots" id="testimonial-dots"></div>
+                    <button class="slider-btn next" id="next-testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-particles"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Pronto para começar a <span>economizar</span>?</h2>
+                <p>Solicite agora seu orçamento gratuito e descubra quanto você pode economizar com energia solar</p>
+                <div class="cta-buttons">
+                    <a href="#contato" class="btn btn-white">
+                        <i class="fas fa-calculator"></i> Solicitar Orçamento
+                    </a>
+                    <a href="https://wa.me/5592995350900" target="_blank" class="btn btn-outline-white">
+                        <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Contato</span>
+                <h2>Fale <span class="gradient-text">Conosco</span></h2>
+                <p>Estamos prontos para tirar suas dúvidas e ajudar você a economizar</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Endereço</h4>
+                            <p>Av. Torquato Tapajós, 3282<br>Sala 01 - Colônia<br>Manaus - AM</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Telefone</h4>
+                            <p><a href="tel:+5592995350900">(92) 99535-0900</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>E-mail</h4>
+                            <p><a href="mailto:contato@mhpenergia.com.br">contato@mhpenergia.com.br</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Horário</h4>
+                            <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Siga-nos</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/mhpenergia/" target="_blank" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://br.linkedin.com/company/mhp-engenharia-e-energia-solar" target="_blank" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.facebook.com/mhpenergia" target="_blank" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://wa.me/5592995350900" target="_blank" class="social-icon whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-header">
+                            <h3>Solicite seu Orçamento</h3>
+                            <p>Preencha o formulário e entraremos em contato em até 24h</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Nome completo</label>
+                            <input type="text" id="name" name="name" required placeholder="Digite seu nome">
+                            <i class="fas fa-user"></i>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(92) 99999-9999">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bill">Valor médio da conta de luz</label>
+                            <select id="bill" name="bill" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="ate-300">Até R$ 300</option>
+                                <option value="300-500">R$ 300 a R$ 500</option>
+                                <option value="500-1000">R$ 500 a R$ 1.000</option>
+                                <option value="1000-2000">R$ 1.000 a R$ 2.000</option>
+                                <option value="acima-2000">Acima de R$ 2.000</option>
+                            </select>
+                            <i class="fas fa-bolt"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensagem (opcional)</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Conte-nos mais sobre seu projeto..."></textarea>
+                            <i class="fas fa-comment-alt"></i>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Enviar Solicitação
+                        </button>
+
+                        <p class="form-disclaimer">
+                            <i class="fas fa-lock"></i> Seus dados estão seguros conosco
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#home" class="footer-logo">
+                            <span class="logo-icon"><i class="fas fa-solar-panel"></i></span>
+                            <span class="logo-text">MHP<span class="highlight">Energia</span></span>
+                        </a>
+                        <p>Transformando a energia do sol em economia e sustentabilidade para você e sua empresa desde 2019.</p>
+                        <div class="footer-social">
+                            <a href="https://www.instagram.com/mhpenergia/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://br.linkedin.com/company/mhp-engenharia-e-energia-solar" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/mhpenergia" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://wa.me/5592995350900" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Links Rápidos</h4>
+                        <ul>
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#sobre">Sobre Nós</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#beneficios">Benefícios</a></li>
+                            <li><a href="#projetos">Projetos</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li><a href="#servicos">Projeto Personalizado</a></li>
+                            <li><a href="#servicos">Instalação</a></li>
+                            <li><a href="#servicos">Manutenção</a></li>
+                            <li><a href="#servicos">Monitoramento</a></li>
+                            <li><a href="#servicos">Financiamento</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-contact">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Av. Torquato Tapajós, 3282<br>Manaus - AM</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="tel:+5592995350900">(92) 99535-0900</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:contato@mhpenergia.com.br">contato@mhpenergia.com.br</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 MHP Engenharia e Energia Solar. Todos os direitos reservados.</p>
+                <p>Desenvolvido com <i class="fas fa-heart"></i> e energia solar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5592995350900" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip">Fale Conosco</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

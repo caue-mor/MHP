@@ -20,9 +20,15 @@
     --accent-blue: #0066CC;
     --accent-yellow: #FFD700;
 
+    /* Blue Theme Colors - Degradê do escuro para claro */
+    --blue-dark: #0d2137;
+    --blue-medium: #1a3a5f;
+    --blue-light: #2d5a87;
+    --blue-lighter: #4a7ab0;
+
     /* Neutral Colors */
-    --dark: #1A1A2E;
-    --dark-light: #2D2D44;
+    --dark: #0d2137;
+    --dark-light: #1a3a5f;
     --gray-900: #212529;
     --gray-800: #343a40;
     --gray-700: #495057;
@@ -37,8 +43,8 @@
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
     --gradient-secondary: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-light) 100%);
-    --gradient-dark: linear-gradient(135deg, var(--dark) 0%, var(--dark-light) 100%);
-    --gradient-hero: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0a192f 100%);
+    --gradient-dark: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue-medium) 100%);
+    --gradient-hero: linear-gradient(135deg, #0d2137 0%, #1a3a5f 40%, #2d5a87 100%);
     --gradient-text: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
 
     /* Shadows */
@@ -82,6 +88,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body {
@@ -91,6 +98,8 @@ body {
     color: var(--gray-800);
     background-color: var(--white);
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
 }
 
 a {
@@ -2334,6 +2343,86 @@ select {
     }
 }
 
+@media (max-width: 768px) {
+    /* Prevenir vazamentos em mobile */
+    .container {
+        padding: 0 15px;
+        overflow-x: hidden;
+    }
+
+    .hero-content {
+        padding: 0 15px;
+        padding-top: 100px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* Ajustes de seção */
+    .section-header {
+        padding: 0 10px;
+    }
+
+    /* Scroll indicator esconder em mobile */
+    .scroll-indicator {
+        display: none;
+    }
+
+    /* Floating cards esconder em mobile */
+    .floating-card {
+        display: none;
+    }
+
+    /* Ajuste de benefits */
+    .benefit-item {
+        padding: 15px;
+    }
+
+    .benefit-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+
+    /* Ajuste calculadora */
+    .savings-calculator {
+        margin: 0 -15px;
+        border-radius: 0;
+    }
+
+    .calculator-body {
+        padding: 20px;
+    }
+
+    /* Projects filter */
+    .projects-filter {
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+}
+
 @media (max-width: 480px) {
     .hero h1 {
         font-size: 1.8rem;
@@ -2344,35 +2433,127 @@ select {
     }
 
     .btn {
-        padding: 12px 24px;
+        padding: 12px 20px;
         font-size: 0.9rem;
     }
 
     .section-header h2 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
+    .section-header p {
+        font-size: 0.9rem;
+    }
+
+    /* Experience badge - esconder em telas muito pequenas */
     .experience-badge {
-        width: 110px;
-        height: 110px;
-        bottom: -20px;
-        right: -10px;
-    }
-
-    .experience-badge .years {
-        font-size: 2rem;
+        display: none;
     }
 
     .counter {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .counters-section {
         grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .counter-item {
+        padding: 20px 15px;
     }
 
     .contact-form {
+        padding: 20px;
+    }
+
+    /* Hero stats menores */
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+
+    /* Service cards */
+    .service-card {
         padding: 25px;
+    }
+
+    /* About features */
+    .about-features {
+        gap: 15px;
+    }
+
+    .feature {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .feature-icon {
+        margin: 0 auto;
+    }
+
+    /* Footer ajustes */
+    .footer-top {
+        padding: 50px 0 40px;
+    }
+
+    .footer-grid {
+        gap: 30px;
+    }
+
+    /* Info cards */
+    .info-card {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .info-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    /* Testimonials */
+    .testimonial-content {
+        padding: 25px;
+    }
+
+    /* CTA section */
+    .cta-section {
+        padding: 60px 0;
+    }
+
+    .cta-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .cta-content p {
+        font-size: 1rem;
+    }
+
+    /* WhatsApp e Back to top */
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .whatsapp-float .tooltip {
+        display: none;
+    }
+
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        right: 75px;
+        bottom: 15px;
     }
 }
 
